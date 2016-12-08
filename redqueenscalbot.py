@@ -19,7 +19,7 @@ except ImportError:
 # at ~/.credentials/calendar-python-quickstart.json
 SCOPES = 'https://www.googleapis.com/auth/calendar.readonly'
 CLIENT_SECRET_FILE = 'client_secret.json'
-APPLICATION_NAME = 'Google Calendar API Python Quickstart'
+APPLICATION_NAME = 'Red Queens Calendar Telegram Bot'
 
 CALENDAR_ID = 'redqueensuk@gmail.com'
 
@@ -37,7 +37,7 @@ def get_credentials():
     if not os.path.exists(credential_dir):
         os.makedirs(credential_dir)
     credential_path = os.path.join(credential_dir,
-                                   'calendar-python-quickstart.json')
+                                   'redqueens-calendarbot.json')
 
     store = Storage(credential_path)
     credentials = store.get()
